@@ -17,7 +17,6 @@ pipeline{
   stages{
 		stage('CheckOut'){
 			steps{
-				sh "git clean -fdx"
 				script{
 				
 					def commitSha = getCompleteSHA()
